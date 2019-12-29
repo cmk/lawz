@@ -1,4 +1,4 @@
-module Test.Property.Util where
+module Test.Util where
 
 type Rel r = r -> r -> Bool
 

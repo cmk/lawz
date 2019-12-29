@@ -1,6 +1,6 @@
-module Test.Property.Operation.Neutral where
+module Test.Operation.Neutral where
 
-import Test.Property.Util
+import Test.Util
 
 -- | \( \forall a: (u \# a) \equiv a \)
 --

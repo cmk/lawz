@@ -1,6 +1,6 @@
-module Test.Property.Function.Injective where
+module Test.Function.Injective where
 
-import Test.Property.Util
+import Test.Util
 
 -- | \( \forall a: f a \equiv f b \Rightarrow a \equiv b \)
 --

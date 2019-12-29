@@ -1,6 +1,6 @@
-module Test.Property.Operation.Annihilative where
+module Test.Operation.Annihilative where
 
-import Test.Property.Util
+import Test.Util
 
 
 -- | \( \forall a: (u \# a) \equiv u \)

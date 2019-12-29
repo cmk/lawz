@@ -1,8 +1,8 @@
-module Test.Property.Function.Idempotent where
+module Test.Function.Idempotent where
 
 import Data.List (unfoldr)
 import Numeric.Natural (Natural(..))
-import Test.Property.Util
+import Test.Util
 
 -- | \( \forall a: g \circ f (a) = f (a) \)
 --

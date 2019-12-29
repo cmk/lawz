@@ -1,2 +1,2 @@
-# property
-Common properties
+# laws
+Common mathematical laws.

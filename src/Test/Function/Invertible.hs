@@ -1,6 +1,6 @@
-module Test.Property.Function.Invertible where
+module Test.Function.Invertible where
 
-import Test.Property.Util
+import Test.Util
 
 
 -- | \( \forall a: f a \# b \Leftrightarrow a \# g b \)

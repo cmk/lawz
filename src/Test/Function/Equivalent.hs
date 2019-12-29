@@ -1,6 +1,6 @@
-module Test.Property.Function.Equivalent where
+module Test.Function.Equivalent where
 
-import Test.Property.Util
+import Test.Util
 
 
 

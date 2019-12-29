@@ -1,6 +1,6 @@
-module Test.Property.Operation.Commutative where
+module Test.Operation.Commutative where
 
-import Test.Property.Util
+import Test.Util
 
 -- | \( \forall a, b: a \# b \equiv b \# a \)
 --

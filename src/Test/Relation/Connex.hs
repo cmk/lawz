@@ -1,7 +1,7 @@
 -- | See <https://en.wikipedia.org/wiki/Connex_relation>.
-module Test.Property.Relation.Connex where
+module Test.Relation.Connex where
 
-import Test.Property.Util
+import Test.Util
 
 -- | \( \forall a, b: ((a \# b) \vee (b \# a)) \)
 --

@@ -4,9 +4,9 @@
 --
 -- As an example over the natural numbers, the relation \(a \# b \) defined by 
 -- \( a > 2 \) is neither symmetric nor antisymmetric, let alone asymmetric.
-module Test.Property.Relation.Symmetric where
+module Test.Relation.Symmetric where
 
-import Test.Property.Util
+import Test.Util
 
 
 -- | \( \forall a, b: (a \# b) \Leftrightarrow (b \# a) \)

@@ -1,6 +1,6 @@
-module Test.Property.Function.Monotone where
+module Test.Function.Monotone where
 
-import Test.Property.Util
+import Test.Util
 
 monotone :: Ord r => (r -> r) -> r -> r -> Bool
 monotone = monotone_on (<=) (<=)

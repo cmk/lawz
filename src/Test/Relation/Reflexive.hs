@@ -7,9 +7,9 @@
 -- \( (0, 0) \) and \( (2, 4) \), but not \( (2, 2) \).
 --
 --  The latter two facts also rule out quasi-reflexivity.
-module Test.Property.Relation.Reflexive where
+module Test.Relation.Reflexive where
 
-import Test.Property.Util
+import Test.Util
 
 
 -- | \( \forall a: (a \# a) \)

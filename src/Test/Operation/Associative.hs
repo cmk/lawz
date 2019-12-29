@@ -1,6 +1,6 @@
-module Test.Property.Operation.Associative where
+module Test.Operation.Associative where
 
-import Test.Property.Util
+import Test.Util
 
 
 -- | \( \forall a, b, c: (a \# b) \# c \equiv a \# (b \# c) \)

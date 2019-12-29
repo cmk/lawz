@@ -1,6 +1,6 @@
-module Test.Property.Operation.Distributive where
+module Test.Operation.Distributive where
 
-import Test.Property.Util
+import Test.Util
 
 
 -- | \( \forall a, b, c: (a \# b) \% c \equiv (a \% c) \# (b \% c) \)
