@@ -6,7 +6,7 @@
 -- \( a > 2 \) is neither symmetric nor antisymmetric, let alone asymmetric.
 module Test.Relation.Symmetric where
 
-import Test.Util
+import Test.Logic
 
 
 -- | \( \forall a, b: (a \# b) \Leftrightarrow (b \# a) \)

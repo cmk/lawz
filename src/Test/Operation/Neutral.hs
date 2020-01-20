@@ -1,6 +1,6 @@
 module Test.Operation.Neutral where
 
-import Test.Util
+import Test.Logic
 
 -- | \( \forall a: (u \# a) \equiv a \)
 --
@@ -20,8 +20,8 @@ neutral = neutral_on (==)
 neutral' :: Eq r => (r -> r -> r) -> r -> (r -> Bool)
 neutral' = neutral_on' (==)
 
-neutral_on :: Rel r -> (r -> r -> r) -> r -> (r -> Bool)
+neutral_on :: Rel r b -> (r -> r -> r) -> r -> (r -> b)
 neutral_on (~~) (#) u a = (u # a) ~~ a
 
-neutral_on' :: Rel r -> (r -> r -> r) -> r -> (r -> Bool)
+neutral_on' :: Rel r b -> (r -> r -> r) -> r -> (r -> b)
 neutral_on' (~~) (#) u a = (a # u) ~~ a

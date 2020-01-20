@@ -1,6 +1,6 @@
 module Test.Relation.Transitive where
 
-import Test.Util
+import Test.Logic
 
 
 -- | \( \forall a, b, c: ((a \# b) \wedge (b \# c)) \Rightarrow (a \# c) \)

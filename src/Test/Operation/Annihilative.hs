@@ -1,6 +1,6 @@
 module Test.Operation.Annihilative where
 
-import Test.Util
+import Test.Logic
 
 
 -- | \( \forall a: (u \# a) \equiv u \)
@@ -21,8 +21,8 @@ annihilative = annihilative_on (==)
 annihilative' :: Eq r => (r -> r -> r) -> r -> (r -> Bool)
 annihilative' = annihilative_on' (==)
 
-annihilative_on :: Rel r -> (r -> r -> r) -> r -> (r -> Bool)
+annihilative_on :: Rel r b -> (r -> r -> r) -> r -> (r -> b)
 annihilative_on (~~) (#) u a = (u # a) ~~ u
 
-annihilative_on' :: Rel r -> (r -> r -> r) -> r -> (r -> Bool)
+annihilative_on' :: Rel r b -> (r -> r -> r) -> r -> (r -> b)
 annihilative_on' (~~) (#) u a = (a # u) ~~ u

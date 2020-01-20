@@ -1,6 +1,6 @@
 module Test.Function.Equivalent where
 
-import Test.Util
+import Test.Logic
 
 
 
@@ -12,5 +12,5 @@ equivalent = equivalent_on (==)
 
 -- | \( \forall a: f a \doteq g a \)
 --
-equivalent_on :: Rel r -> (r -> r) -> (r -> r) -> (r -> Bool)
+equivalent_on :: Rel r b -> (r -> r) -> (r -> r) -> (r -> b)
 equivalent_on (~~) f g a = f a ~~ g a

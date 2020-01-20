@@ -2,7 +2,7 @@ module Test.Function.Idempotent where
 
 import Data.List (unfoldr)
 import Numeric.Natural (Natural(..))
-import Test.Util
+import Test.Logic
 
 -- | \( \forall a: g \circ f (a) = f (a) \)
 --
@@ -11,7 +11,7 @@ projective = projective_on (==)
 
 -- | \( \forall a: g \circ f (a) \sim f (a) \)
 --
-projective_on :: Rel s -> (r -> s) -> (s -> s) -> r -> Bool
+projective_on :: Rel s b -> (r -> s) -> (s -> s) -> r -> b
 projective_on (~~) f g r = g (f r) ~~ f r
 
 -- | \( \forall a: f \circ f(a) = f(a) \)
@@ -21,7 +21,7 @@ idempotent f = idempotent_on (==) f
 
 -- | \( \forall a: f \circ f(a) \sim f(a) \)
 --
-idempotent_on :: Rel r -> (r -> r) -> r -> Bool
+idempotent_on :: Rel r b -> (r -> r) -> r -> b
 idempotent_on (~~) f = projective_on (~~) f f
 
 idempotent_k :: Eq r => Natural -> (r -> r) -> r -> Bool

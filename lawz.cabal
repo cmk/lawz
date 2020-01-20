@@ -31,7 +31,7 @@ library
      Test.Operation.Commutative
      Test.Operation.Distributive
      Test.Operation.Neutral
-     Test.Util
+     Test.Logic
 
   default-extensions:
      FlexibleInstances

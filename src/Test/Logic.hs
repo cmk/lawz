@@ -1,6 +1,6 @@
-module Test.Util where
+module Test.Logic where
 
-type Rel r = r -> r -> Bool
+type Rel r b = r -> r -> b
 
 xor :: Bool -> Bool -> Bool
 xor a b = (a || b) && not (a && b)

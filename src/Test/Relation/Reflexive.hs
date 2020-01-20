@@ -9,7 +9,7 @@
 --  The latter two facts also rule out quasi-reflexivity.
 module Test.Relation.Reflexive where
 
-import Test.Util
+import Test.Logic
 
 
 -- | \( \forall a: (a \# a) \)
