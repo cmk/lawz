@@ -1,5 +1,5 @@
 name:                lawz
-version:             0.1
+version:             0.1.1
 synopsis:            Common mathematical laws.
 description:         Library of predicates for property testing.
 homepage:            https://github.com/cmk/lawz
